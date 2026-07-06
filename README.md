@@ -164,3 +164,116 @@ After completing this project, you will be able to:
 - Apply TCPDump filters to isolate specific traffic.
 - Understand basic packet-based troubleshooting.
 - Document a complete packet analysis workflow.
+
+---
+
+# Installation & Verification
+
+## Step 1 - Update Package Repository
+
+```bash
+sudo apt update
+```
+
+Updating the package repository ensures that the latest package information is available before installing TCPDump.
+
+---
+
+## Step 2 - Install TCPDump
+
+```bash
+sudo apt install tcpdump -y
+```
+
+This installs TCPDump along with its required dependencies.
+
+---
+
+## Step 3 - Verify Installation
+
+```bash
+tcpdump --version
+```
+
+Expected output:
+
+```text
+tcpdump version 4.99.6
+libpcap version 1.10.6
+```
+
+**Screenshot**
+
+![TCPDump Version](docs/screenshots/P2-01-tcpdump-version.png)
+
+---
+
+# Phase 1 - Environment Setup
+
+Before capturing network traffic, it is important to understand the Linux environment where TCPDump will be used.
+
+This phase verifies the operating system, kernel version, and available network interfaces.
+
+---
+
+## 1. Verify Operating System
+
+```bash
+cat /etc/os-release
+```
+
+This command displays detailed operating system information.
+
+**Screenshot**
+
+![Operating System](docs/screenshots/P1-01-os-version.png)
+
+---
+
+## 2. Verify Linux Kernel Version
+
+```bash
+uname -r
+```
+
+This command displays the currently running Linux kernel version.
+
+The kernel manages hardware resources, networking, process scheduling, and system security.
+
+**Screenshot**
+
+![Kernel Version](docs/screenshots/P1-02-kernel-version.png)
+
+---
+
+## 3. Display Network Interfaces
+
+```bash
+ip addr
+```
+
+This command displays all available network interfaces along with their IP addresses.
+
+During this lab, the following interfaces were observed:
+
+- **lo** – Loopback interface used for local communication.
+- **ens33** – Primary network interface connected to the virtual network.
+
+Understanding network interfaces is essential because TCPDump captures traffic from a selected interface.
+
+**Screenshot**
+
+![Network Interfaces](docs/screenshots/P1-03-network-interface.png)
+
+---
+
+# Phase 1 Summary
+
+In this phase, the lab environment was verified successfully.
+
+The following tasks were completed:
+
+- Verified Ubuntu operating system.
+- Verified Linux kernel version.
+- Identified available network interfaces.
+- Confirmed the interface that will be used for packet capture.
