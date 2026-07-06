@@ -6,6 +6,14 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 
+---
+
+## Architecture Diagram
+
+![TCPDump Network Packet Analysis Lab Architecture](docs/screenshots/tcpdump-architecture-diagram.png)
+
+---
+
 ## Project Overview
 
 This project demonstrates how to capture, analyze, filter, and save network packets using **TCPDump** on Ubuntu Linux.
