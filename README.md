@@ -12,6 +12,33 @@
 
 ![TCPDump Network Packet Analysis Lab Architecture](docs/screenshots/tcpdump-architecture-diagram.png)
 
+> **Figure 1:** High-level workflow of the TCPDump Network Packet Analysis Lab, illustrating packet capture, protocol analysis, PCAP generation, and troubleshooting.
+
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Architecture Diagram](#architecture-diagram)
+- [Objectives](#objectives)
+- [Lab Environment](#lab-environment)
+- [Project Structure](#project-structure)
+- [Installation & Verification](#installation--verification)
+- [Phase 1 - Environment Setup](#phase-1---environment-setup)
+- [Phase 2 - Installing & Understanding TCPDump](#phase-2--installing--understanding-tcpdump)
+- [Phase 3 - Live Packet Capture & Protocol Analysis](#phase-3--live-packet-capture--protocol-analysis)
+- [Phase 4 - Save & Read PCAP Files](#phase-4--save--read-pcap-files)
+- [Phase 5 - TCPDump Filter Cheat Sheet](#phase-5--tcpdump-filter-cheat-sheet)
+- [Real-World Troubleshooting Scenarios](#real-world-troubleshooting-scenarios)
+- [Interview Questions](#interview-questions)
+- [Key Learnings](#key-learnings)
+- [Skills Gained](#skills-gained)
+- [Future Improvements](#future-improvements)
+- [Conclusion](#conclusion)
+- [About the Author](#about-the-author)
+- [Cybersecurity Home Lab Series](#cybersecurity-home-lab-series)
+- [License](#license)
+
 ---
 
 ## Project Overview
